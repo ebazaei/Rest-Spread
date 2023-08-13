@@ -1,5 +1,5 @@
 //Rest-Spread
-
+//Rest-------------------------------------------------------
 //The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:
 console.log("-------Rest-------");
 
@@ -76,6 +76,9 @@ function magic(...nums){
 console.log(magic(1,2,3,4,5,6)) //12   6+4+2   سه عدد را میتوان تقسیم بر دو کرد
 
 
+
+
+//Spread-------------------------------------------------------
 //The Spread (...) Operator
 console.log("-------The Spread (...) Operator-------");
 
