@@ -79,6 +79,18 @@ console.log(magic(1,2,3,4,5,6)) //12   6+4+2   سه عدد را میتوان ت�
 
 
 //Spread-------------------------------------------------------
+//انتقال عناصر یک آرایه به عنووان آرگومان به یک فانکشن
+//Old Rest روش قدیمی
+console.log("Old Spread");
+
+function myFunction(w,x,y,z){
+    console.log(w+x+y+z);
+}
+var args = [1,2,3];
+myFunction.apply(null,args.concat(4)); //10
+
+
+
 //The Spread (...) Operator
 console.log("-------The Spread (...) Operator-------");
 
