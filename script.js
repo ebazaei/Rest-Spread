@@ -79,9 +79,10 @@ console.log(magic(1,2,3,4,5,6)) //12   6+4+2   سه عدد را میتوان ت�
 
 
 //Spread-------------------------------------------------------
+console.log("-------Spread-------");
 //انتقال عناصر یک آرایه به عنووان آرگومان به یک فانکشن
-//Old Rest روش قدیمی
-console.log("Old Spread");
+//Old Spread روش قدیمی
+console.log("-------Old Spread-------");
 
 function myFunction(w,x,y,z){
     console.log(w+x+y+z);
@@ -90,9 +91,17 @@ var args = [1,2,3];
 myFunction.apply(null,args.concat(4)); //10
 
 
+//ES6 Spread
+console.log("-------ES6 Spread-------");
+const myFunction2 = (W,X,Y,Z) => {
+    console.log(W+X+Y+Z);
+}
+var args2 = [1,2,3];
+myFunction2(...args2, 4); //10
+
 
 //The Spread (...) Operator
-console.log("-------The Spread (...) Operator-------");
+console.log("-------Example 2-Operator-------");
 
 const q1 = ["Jan", "Feb", "Mar"];
 const q2 = ["Apr", "May", "Jun"];
@@ -104,3 +113,10 @@ const year = [...q1, ...q2, ...q3, ...q4];
 console.log(year) //'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'May'
 
 
+//The Spread (...) Operator
+console.log("-------Example 3-------");
+
+var dataFields = [1970, 0, 1]; //1 Jan 1970
+
+var date = new Date(...dataFields);
+console.log(date); //Thu Jan 01 1970 00:00:00 GMT+0100 (Central European Standard Time)
