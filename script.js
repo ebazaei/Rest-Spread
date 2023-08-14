@@ -147,6 +147,16 @@ let arr2=['one','two',...newArr,'five'];
 console.log(arr2);
 
 
-// console.log("\n \n");
-// //Spread in Object Literal
-// console.log("-------Spread in Object Literal-------");
+console.log("\n \n");
+//Spread in Object Literal
+console.log("-------Spread in Object Literal-------");
+
+const objx1 = {foo:'bar',x:42};
+const objx2 = {foo:"baz" ,y:45};
+const merge = (...objects) => ({...objects});
+
+let mergeObjx = merge(objx1,objx2);
+console.log(mergeObjx);
+
+let mergeObjx2 = merge({},objx1,objx2);
+console.log(mergeObjx2);
