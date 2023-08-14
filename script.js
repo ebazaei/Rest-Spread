@@ -77,7 +77,7 @@ console.log(magic(1,2,3,4,5,6)) //12   6+4+2   سه عدد را میتوان ت�
 
 
 
-
+console.log("\n \n");
 //Spread-------------------------------------------------------
 console.log("-------Spread-------");
 //انتقال عناصر یک آرایه به عنووان آرگومان به یک فانکشن
@@ -113,10 +113,40 @@ const year = [...q1, ...q2, ...q3, ...q4];
 console.log(year) //'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'May'
 
 
-//The Spread (...) Operator
+//The Spread Example
 console.log("-------Example 3-------");
 
 var dataFields = [1970, 0, 1]; //1 Jan 1970
 
 var date = new Date(...dataFields);
 console.log(date); //Thu Jan 01 1970 00:00:00 GMT+0100 (Central European Standard Time)
+
+
+
+
+
+console.log("\n \n");
+//The Spread Array Literals
+//اضافه کردن یک آیتم وسط یک آرایه
+console.log("-------Spread Array Literals-------");
+
+//Old Spread Array Literals
+console.log("-------Old Spread Array Literals-------");
+
+var arr=['one','two','five'];
+arr.splice(2,0,'three');
+arr.splice(3,0,'four');
+console.log(arr);
+
+
+//ES6 Spread Array Literals
+console.log("-------ES6 Spread Array Literals-------");
+
+let newArr = ['three','four'];
+let arr2=['one','two',...newArr,'five'];
+console.log(arr2);
+
+
+// console.log("\n \n");
+// //Spread in Object Literal
+// console.log("-------Spread in Object Literal-------");
